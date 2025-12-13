@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Création de sites vitrines premium</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background blobs -->
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+
+<header class="hero animate">
+  <span class="badge">PREMIUM WEB DESIGN</span>
+  <h1>Des sites qui donnent<br>envie de vous faire confiance.</h1>
+  <p>Pour marques, business et projets qui veulent une image forte.</p>
+  <p class="offer">⚡ Offre spéciale : seulement <strong>5 places</strong> cette semaine !</p>
+  <a href="https://wa.me/2290169213654?text=Salut%20!%20👋%20Je%20veux%20un%20site%20vitrine%20premium%20pour%20mon%20business.%20Je%20veux%20commencer%20cette%20semaine%20et%20avoir%20un%20site%20qui%20attire%20des%20clients.%20Pouvez-vous%20m’aider%20?" class="btn">
+    ✦ Discutons sur WhatsApp
+  </a>
+</header>
+
+<section class="section animate">
+  <h2>Pour qui ?</h2>
+  <div class="grid">
+    <div class="card">Boutiques</div>
+    <div class="card">Églises</div>
+    <div class="card">Associations</div>
+    <div class="card">Petits business</div>
+  </div>
+</section>
+
+<section class="section bg-light animate">
+  <h2>Ce que je vous offre</h2>
+  <ul class="list">
+    <li>Site moderne et professionnel</li>
+    <li>Compatible téléphone et ordinateur</li>
+    <li>Mise en ligne gratuite</li>
+    <li>Livraison rapide</li>
+  </ul>
+</section>
+
+<section class="section animate">
+  <h2>Pourquoi me choisir ?</h2>
+  <div class="grid">
+    <div class="card">Rapide</div>
+    <div class="card">Simple</div>
+    <div class="card">Pas cher</div>
+    <div class="card">Support WhatsApp</div>
+  </div>
+</section>
+
+<section class="section bg-dark animate">
+  <h2>Prix</h2>
+  <p class="price">À partir de <strong>10 000 FCFA</strong></p>
+  <a href="https://wa.me/2290169213654?text=Salut%20!%20👋%20Je%20veux%20un%20site%20vitrine%20premium%20pour%20mon%20business.%20Je%20veux%20commencer%20cette%20semaine%20et%20avoir%20un%20site%20qui%20attire%20des%20clients.%20Pouvez-vous%20m’aider%20?" class="btn">Commander maintenant</a>
+</section>
+
+<footer class="animate">
+  <p>© 2025 – Création de sites vitrines premium</p>
+</footer>
+
+<script>
+  // Simple fade-in animation on scroll
+  const animatedItems = document.querySelectorAll('.animate');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        entry.target.classList.add('fade-in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  animatedItems.forEach(item => observer.observe(item));
+</script>
+
+</body>
+</html>
+
