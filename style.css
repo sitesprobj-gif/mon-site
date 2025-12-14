@@ -7,12 +7,11 @@
 }
 
 body {
-  background: linear-gradient(-45deg, #0b0b0f, #0a2540, #f5c77a, #111418);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
+  background: linear-gradient(-45deg, #0b0b0f, #0a2540, #c0a372, #111418);
+  background-size: 400%;
+  animation: gradientBG 13s ease infinite;
   color: #f5f5f5;
   line-height: 1.6;
-  position: relative;
   overflow-x: hidden;
 }
 
@@ -84,14 +83,12 @@ body {
   font-size: 1.1rem;
 }
 
-
 .offer {
   color: #f5c77a;
   font-weight: bold;
   margin-bottom: 15px;
   font-size: 1.1rem;
 }
-
 
 /* BOUTON PREMIUM */
 .btn {
@@ -104,9 +101,6 @@ body {
   font-weight: 600;
   transition: all 0.3s ease;
   z-index: 2;
-   position: sticky;
-  bottom: 20px;
-  z-index: 100;
 }
 
 .btn:hover {
@@ -129,7 +123,7 @@ body {
 .section {
   position: relative;
   z-index: 1;
-  padding: 60px 20px;
+  padding: 40px 20px;
   max-width: 1100px;
   margin: auto;
   text-align: center;
@@ -160,11 +154,45 @@ body {
   border-radius: 12px;
   font-weight: bold;
   transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
 }
 
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(245, 199, 122, 0.4);
+}
+
+/* SECTION "POUR QUI" */
+.pour-qui h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: 50px;
+  color: #f5c77a;
+}
+
+.pour-qui .grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.pour-qui .card {
+  padding: 28px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.pour-qui .card h3 {
+  margin-bottom: 12px;
+  color: #f5c77a;
+}
+
+.pour-qui .card p {
+  opacity: 0.85;
+  font-size: 0.95rem;
+}
+
+.pour-qui .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(245,199,122,0.3);
 }
 
 /* LISTE OFFRE */
@@ -188,6 +216,13 @@ body {
   color: #f5c77a;
 }
 
+.card h3 {
+  background: linear-gradient(90deg, #f5c77a, #ffc107);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 /* PRIX */
 .price {
   font-size: 2rem;
@@ -200,9 +235,9 @@ footer {
   background: rgba(17,20,24,0.85);
   color: #ccc;
   text-align: center;
-  padding: 20px;
+  padding: 20px 20px;
   font-size: 0.9rem;
-  border-radius: 10px;
+  margin-top: 2rem;
 }
 
 /* ANIMATIONS D’ENTRÉE */
@@ -229,5 +264,9 @@ footer {
 
   .card {
     padding: 20px;
+  }
+
+  .pour-qui .card p {
+    font-size: 0.9rem;
   }
 }
