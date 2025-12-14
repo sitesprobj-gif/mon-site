@@ -40,7 +40,7 @@ body {
 .blob2 {
   width: 500px; height: 500px;
   background: #0a2540;
-  bottom: -100px;
+  bottom: -50rem;
   right: -100px;
 }
 
